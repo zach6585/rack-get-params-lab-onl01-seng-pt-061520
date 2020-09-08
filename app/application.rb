@@ -24,6 +24,7 @@ class Application
       end 
     elsif req.path.match(/add/)
       allo = req.params["item"]
+      if 
     else
       resp.write "Path Not Found"
     end
