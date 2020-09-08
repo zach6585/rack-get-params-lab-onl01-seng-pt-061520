@@ -25,7 +25,7 @@ class Application
     elsif req.path.match(/add/)
       allo = req.params["item"]
       if @@items.include?(allo)
-        
+        @@cart << allo
       else
         resp.write("We don't have that item")
       end 
