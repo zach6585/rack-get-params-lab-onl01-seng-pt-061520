@@ -26,6 +26,7 @@ class Application
       allo = req.params["item"]
       if @@items.include?(allo)
         @@cart << allo
+        resp.write "added #{allo}"
       else
         resp.write("We don't have that item")
       end 
