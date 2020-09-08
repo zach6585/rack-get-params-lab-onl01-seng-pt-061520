@@ -26,7 +26,8 @@ class Application
       allo = req.params["item"]
       if @@items.include?(allo)
         
-      else 
+      else
+        resp.write("We don't have that item")
       end 
     else
       resp.write "Path Not Found"
