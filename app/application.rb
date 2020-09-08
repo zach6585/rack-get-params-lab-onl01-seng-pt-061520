@@ -25,6 +25,7 @@ class Application
     elsif req.path.match(/add/)
       allo = req.params["item"]
       if @@items.include?(allo)
+        
       else 
       end 
     else
